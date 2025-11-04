@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Mannequin Viewer - HerDesign Scanner</title>
+    <style>
+        /* CSS to make the 3D scene fill the entire browser window */
+        body { margin: 0; overflow: hidden; }
+        canvas { display: block; }
+    </style>
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+    <script src="https://unpkg.com/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://unpkg.com/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://unpkg.com/three@0.128.0/examples/js/loaders/RGBELoader.js"></script>
+    
+    <script src="./app.js"></script>
+    <input type="file" id="fabricUpload" accept="image/*" 
+style="position: fixed; top: 20px; left: 20px; z-index: 9999; padding: 8px; background: #fff; border-radius: 5px;">
+
+<canvas id="webgl"></canvas>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
